@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="this is the description">
+    <meta name="keywords" content="java, html, css, js, go, react, angular">
+    <meta name="author" content="ijse">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assest/Style/style.css">
+
+    <title>CSS</title>
+
+    <style>
+      /*  type selector*/
+      /* h2{
+           color: greenyellow;
+        }
+     !* !*id selector*!*!
+      #my-topic{
+          background: green;
+      }
+
+     !*!* class selector**!
+      .my-class{
+          color: yellow;
+          !*background: black;*!
+      }
+
+      #text{
+          color: aqua;
+          background: blue;
+      }
+     !* Universal selector*!
+      * {
+          color: black;
+      }
+      !*Attribute selector*!
+      [href]{  !*attribute name*!
+          color: goldenrod;
+      }
+      [class]{
+          color: chocolate;
+      }
+
+      [href ="https://ijse.lk" ]{ !*attribute value*!
+          color: blueviolet;
+      }
+
+      [href ^= "https"]{ !*start value*!
+          font-weight: bold;
+
+      }
+      [href $= ".com"]{ !*end value*!
+            background: black;
+      }
+
+      [href *= "ijse"]{ !*value snippet*!
+          color: orangered;
+      }
+
+      [href ~= "ijse"]{ !*word in value*!
+          color:magenta;
+      }
+
+      h2[class]{
+          color: maroon;
+          background: orangered;
+      }
+
+!*pseudo-class*!
+      h1:hover{
+          color: lawngreen;
+      }
+
+      h1:active{
+          color: rebeccapurple;
+      }
+
+      a:link{
+          color: yellowgreen;
+      }
+      a:visited{
+          color: magenta;
+      }
+
+      input:focus{
+          color: red;
+      }
+      input:hover{
+          background: lightseagreen;
+      }
+
+      select via the element tree structure
+      li:first-child{
+          color:yellow;
+          background: black;
+      }
+      li:last-child{
+         color: lawngreen;
+          background: darkorange;
+      }
+      li:nth-child(3){
+          color: green;
+          background: lawngreen;
+      }
+      li:nth-last-child(2){
+          color: white;
+          background: yellow;
+      }*/
+      /*li:nth-child(odd){
+          color: hotpink;
+          background: lightpink;
+      }
+
+      li:nth-child(even){
+          color: hotpink;
+          background: lightpink;
+      }
+
+      li:nth-child(n+4){
+          color: hotpink;
+          background: lightpink;
+      }
+      li:nth-child(3n-1){
+          color: hotpink;
+          background: lightpink;
+      }
+
+      li:nth-child(3n+1){
+          color: hotpink;
+          background: lightpink;
+      }
+      li:nth-child(4n){
+          color: hotpink;
+          background: lightpink;
+      }*/
+      h1::before{
+          content: "😍";
+      }
+      h1:hover::before{
+          background: hotpink;
+      }
+
+      h1::after{
+          content: "😍";
+      }
+      h1:hover::after{
+          background: hotpink;
+      }
+
+      p::first-letter{
+          font-weight: bold;
+      }
+      p::first-line{
+          background: yellow;
+      }
+      input::placeholder{
+          color: green;
+          background: yellow;
+      }
+      /*input::file-selector-button{
+          background: blue;
+      }*/
+      input[type = "file"]::file-selector-button{
+          background: blue;
+      }
+      p::selection{
+          background: hotpink;
+      }
+      li::marker{
+          content: "⁜";
+      }
+      h1,#my-topic,.my-class{
+          font-weight: bold;
+      }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>IJSE - Institue of Software Engineering</h1>
+
+
+   <!-- Inline CSS-->
+   <!-- <h1 style="color:red;">Welcome to IJSE</h1>-->
+   <!--Internel CSS-->
+    <!--<h2 class="my-class">Welcome to Internet Technologies-1</h2>-->
+
+    <h2 id="my-topic">Welcome to Internet Technologies-2</h2>
+   <!--External CSS-->
+    <h3>Welcome to Software Engineering</h3>
+
+    <p class="my-class" >
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto error incidunt iusto. A accusantium architecto corporis dignissimos earum fuga laboriosam provident repellendus, repudiandae sequi. Aut cum molestiae odio ratione tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eaque excepturi hic maiores sed tempore ullam. Adipisci blanditiis commodi culpa, dolor, error esse ex id ipsum nulla odit, provident quasi!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At commodi cum, dolor, est facere fuga ipsam nam odit officia praesentium provident quas quisquam, quod quos sint voluptas voluptates. Libero, similique.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet explicabo incidunt, maiores nihil perferendis repellat? Consequatur libero nemo nobis non, quo reiciendis, repudiandae rerum similique suscipit tempore unde veritatis vitae.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto hic laboriosam pariatur. Atque consectetur, dignissimos dolorum ea nisi quae reiciendis sed suscipit vero! Hic in molestiae quisquam recusandae? Alias.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam atque, cumque deserunt dolorem dolores eligendi, eveniet excepturi illum impedit itaque necessitatibus nisi, placeat quod sequi similique sint tempore vero!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid atque consequatur dicta dolores expedita ipsa laborum, maxime minima, modi molestiae nihil nulla numquam repellendus reprehenderit tempore velit vitae. Ad, nostrum!
+
+    </p>
+
+ <!-- &lt;!&ndash; <p>
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto error incidunt iusto. A accusantium architecto corporis dignissimos earum fuga laboriosam provident repellendus, repudiandae sequi. Aut cum molestiae odio ratione tempore.
+   </p>
+
+   <p class="my-class" >
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto error incidunt iusto. A accusantium architecto corporis dignissimos earum fuga laboriosam provident repellendus, repudiandae sequi. Aut cum molestiae odio ratione tempore.
+   </p>
+
+   <div class="my-class" id="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab deleniti ea eligendi ex explicabo, facilis fugiat harum inventore itaque labore, laborum obcaecati officia perspiciatis qui quos recusandae reiciendis reprehenderit repudiandae?
+   </div>
+
+   <br>
+
+   <a href="https:// ijse .lk">IJSE 1</a> <br>
+   <a href="http:// ijse .lk">IJSE 2</a> <br>
+   <a href="https://ijse.com">ABC</a> <br>
+   <a href="https://hiru.com">Hiru</a> <br>
+
+    <br>
+
+
+    <h3 class="h301">H3 01</h3>
+    <h3>H3 02</h3>
+    <h3 class="h301" name="hello.lk">H3 03</h3>
+
+    <br>
+
+
+    <a href="https://sirasatv.lk">Sirasa TV</a> <br>
+    <a href="https://hirutv.lk">Hiru TV</a> <br>
+    <a href="https://supremetv.lk">Supreme TV</a> <br>-->
+
+    <input type="text" placeholder="Enter your name">
+    <input type="file">
+
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+        <li>F</li>
+    </ul>
+
+</body>
+</html>

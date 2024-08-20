@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>example1</title>
+
+    <style>
+        section{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 200px;
+        }
+        section>#circle1{
+            background: mediumpurple;
+            height: 100px;
+            width: 100px;
+            border: solid 5px mediumpurple ;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+       section>div>#circle2{
+            background: purple;
+            height: 50px;
+            width: 50px;
+            border: solid 5px purple;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+
+<body>
+<section>
+    <div id="circle1">
+        <div id="circle2"></div>
+    </div>
+</section>
+
+</body>
+</html>
